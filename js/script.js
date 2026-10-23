@@ -1,9 +1,18 @@
-// console.log("ello");
+var firstListItem = document.querySelector("ul li");
+firstListItem.style.textTransform = "uppercase";
+// console.log(firstListItem.outerHTML);
 
-var mainTitle = document.querySelector("h1");
-mainTitle.innerText = "Yay, JavaScript!";
-console.log(mainTitle.outerHTML);
+var moreReasons = document.querySelector(".more-reasons");
+moreReasons.style.fontSize = "2.5em";
+// console.log(moreReasons.outerHTML);
 
-var body = document.querySelector("body");
-body.style.backgroundColor = "#FEF2F1";
-console.log(body);
+var whyJS = document.querySelector("h2");
+whyJS.innerHTML = 'Why learn <span class="highlight">JavaScript</span>?';
+var highlight = document.querySelector(".highlight");
+highlight.style.backgroundColor = "#ffff82";
+// console.log(whyJS.outerHTML);
+
+var mainImage = document.querySelector("img");
+mainImage.src = "img/js-code.png";
+mainImage.alt = "JavaScript code example";
+console.log(mainImage);
